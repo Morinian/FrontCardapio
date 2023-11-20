@@ -1,0 +1,24 @@
+.listar{
+    width: 100%;
+    height: auto ;
+    background-color: rgb(84, 18, 122);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa{
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+    background-color: rgb(150, 73, 194);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border-radius: 5px;
+}

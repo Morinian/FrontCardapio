@@ -1,0 +1,32 @@
+.quadro{
+    background-color: #c277ee;
+    width: 420px;
+    height: 460px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border-radius: 25px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+h3{
+    color: #fff;
+    font-size: 40px;
+}
+img{
+    margin-top: 20px;
+    width:  400px;
+    height: 300px;
+}
+h4{
+    color: #fff;
+    font-size: 30px;
+}
