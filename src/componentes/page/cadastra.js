@@ -1,5 +1,5 @@
 import Styles from './css/cadastro.module.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 function Cadastrar() {
 
@@ -13,7 +13,7 @@ function Cadastrar() {
     const foods = {title, image, price}
     console.log(foods)
 
-    fetch("http://localhost:8080/food/cadastrar",{
+    fetch("https://apicardapiojava.up.railway.app/food/cadastrar",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(foods)

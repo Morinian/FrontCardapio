@@ -4,10 +4,10 @@ import React, { useEffect, useState } from 'react';
 
 function Listar() {
 
-  const[foods,setFoods]=useState([]);
+  const[food,setFoods]=useState([]);
 
   useEffect(()=>{
-    fetch("http://localhost:8080/food/listar")
+    fetch("https://apicardapiojava.up.railway.app/food/listar")
     .then(res=>res.json())
     .then((result)=>{
       setFoods(result);
@@ -19,11 +19,11 @@ function Listar() {
       <div className={Styles.listar}>
         <div className={Styles.caixa}>
         
-        {foods.map(foods=>(
-            <Quadro key={foods.id}
-            nome={foods.title}
-            imgs={foods.image}
-            preco={foods.price}>
+        {food.map(food=>(
+            <Quadro key={food.id}
+            nome={food.title}
+            imgs={food.image}
+            preco={food.price}>
 
             </Quadro>
         ))
